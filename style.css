@@ -13,6 +13,7 @@ li {
 body {
     margin: 0px;
     padding: 0px;
+    font-family: sans-serif;
 }
 
 .flex-wrapper {
@@ -24,29 +25,57 @@ body {
     width: 100%;
 }
 
+.background-viewport {
+    background: url(images/strand1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #nav {
     display: flex;
     flex-wrap: wrap;
     flex: 1;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .nav-item {
+    display: inline-flex;
     flex: 1;
-    border: 1px solid red;
+    padding-top: 15px;
+    justify-content: center;
+    color: #FFF;
+    font-size: 25px;
+    flex-grow: 0;
+    margin: 0 auto;
 }
 
 .nav-item:hover {
-    background-color: rgb(87, 85, 85);
+    border-bottom: 5px solid rgb(173, 173, 173);
+   }
+
+.nav1 {
+    border-bottom: 5px solid rgb(126, 125, 125);
 }
+
+/* .nav2 {
+}
+
+.nav3 {
+}
+
+.nav4 {
+} */ 
+/* .nav-item div {
+} */
 
 .content-hero {
     display: flex;
-    border: 1px solid red;
-    background: url(images/strand1.jpg);
+    /* background: url(images/strand1.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
-    flex: 1;
+    background-size: cover; */
     min-height: 70vh;
+    flex: 1;
     justify-content: center;
     align-items: center;
     text-align: center;    
@@ -64,27 +93,4 @@ body {
     color: #fff;
     background-color: red;
 }
-
-.animation {
-    width: 20px;
-    height: 200px;
-    margin: 10px;
-    position: absolute;
-    animation-name: slideMe;
-    animation-duration: 2s;   
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    }
-
-@keyframes slideMe {
-    from {
-        top: 0;
-        left: 0;
-    }
-    to {
-        top 0;
-        left: 75%
-    }
-}
-
 }
