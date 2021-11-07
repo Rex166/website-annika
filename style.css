@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+#nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.nav-item {
+    flex: 1;
+    border: 1px solid red;
+}
+
+.nav-item:hover {
+    background-color: rgb(87, 85, 85);
+}
+
+.content-hero {
+    display: flex;
+    border: 1px solid red;
+    background: url(images/strand1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex: 1;
+    min-height: 70vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    flex-direction: column;
+}
+
+.content-hero h1 {
+    font-size: 60px;
+    color: #fff;
+    background-color: yellow;
+}
+
+.content-hero p {
+    width: 50%;
+    color: #fff;
+    background-color: red;
+}
+
+.animation {
+    width: 20px;
+    height: 200px;
+    margin: 10px;
+    position: absolute;
+    animation-name: slideMe;
+    animation-duration: 2s;   
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    }
+
+@keyframes slideMe {
+    from {
+        top: 0;
+        left: 0;
+    }
+    to {
+        top 0;
+        left: 75%
+    }
+}
+
+}
