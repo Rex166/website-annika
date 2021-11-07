@@ -29,6 +29,8 @@ body {
     background: url(images/strand1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 #nav {
@@ -37,17 +39,19 @@ body {
     flex: 1;
     margin-left: 25%;
     margin-right: 25%;
+    margin-bottom: 50px;
+    font-family: 'Playfair Display', serif;
 }
 
 .nav-item {
     display: inline-flex;
-    flex: 1;
     padding-top: 15px;
     justify-content: center;
     color: #FFF;
     font-size: 25px;
     flex-grow: 0;
     margin: 0 auto;
+    flex-grow: 0;
 }
 
 .nav-item:hover {
@@ -65,32 +69,42 @@ body {
 }
 
 .nav4 {
-} */ 
-/* .nav-item div {
 } */
 
 .content-hero {
     display: flex;
-    /* background: url(images/strand1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; */
-    min-height: 70vh;
     flex: 1;
     justify-content: center;
-    align-items: center;
-    text-align: center;    
-    flex-direction: column;
+    margin: 0 20%;
+    font-family: 'Playfair Display', serif;
+    overflow: hidden;
 }
 
-.content-hero h1 {
-    font-size: 60px;
-    color: #fff;
-    background-color: yellow;
-}
-
-.content-hero p {
+.main-img {
     width: 50%;
-    color: #fff;
-    background-color: red;
+    height: 50vh;
+    justify-content: center;
+    align-self: center;
 }
+
+.main-text-right {
+    background-color: #000;
+    color: #FFF;
+    width: 50%;
+    height: 50vh;
+    justify-content: center;
+    text-align: justify;
+    padding: 10px 50px;
+    line-height: 30px;    
+}
+
+.main-text-left {
+    background-color: #000;
+    color: #FFF;
+    width: 50%;
+    height: 50vh;
+    justify-content: center;
+    text-align: justify;
+    padding: 10px 50px;
+    line-height: 30px;    
 }
